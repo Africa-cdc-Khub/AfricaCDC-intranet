@@ -22,13 +22,9 @@
 @section('content')
     @include('home.partials.' . $theme . 'spotlight')
 
-    <!-- @if (empty($theme))
-        @include('home.partials.' . $theme . 'top_categories')
-        @include('home.partials.' . $theme . 'featured')
-    @endif -->
 
     @include('home.partials.' . $theme . 'top_searches')
-    <!-- @include('home.partials.' . $theme . 'top_authors') -->
+    
 @endsection
 
 @section('scripts')
