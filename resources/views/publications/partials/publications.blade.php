@@ -67,8 +67,4 @@
          <h4 class="text-muted">No matching records found</h4>
      </div>
 
-
-     <div class="row justify-content-center">
-         <a href="{{ url('publications/request-content') }}" class="btn btn-dark mt-2">Request Content</a>
-     </div>
  @endif
