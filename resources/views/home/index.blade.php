@@ -16,18 +16,16 @@
         }
     </style>
 
-    @if (!get_cookie('CDC_Tour_Finished') || !env('SITE_LIVE'))
-        @include('partials.tour.css')
-    @endif
+
 @endsection
 
 @section('content')
     @include('home.partials.' . $theme . 'spotlight')
 
-    @if (empty($theme))
+    <!-- @if (empty($theme))
         @include('home.partials.' . $theme . 'top_categories')
         @include('home.partials.' . $theme . 'featured')
-    @endif
+    @endif -->
 
     @include('home.partials.' . $theme . 'top_searches')
     <!-- @include('home.partials.' . $theme . 'top_authors') -->
@@ -36,9 +34,6 @@
 @section('scripts')
     @include('common.select2')
 
-    @if (!get_cookie('CDC_Tour_Finished') || !env('SITE_LIVE'))
-        @include('partials.tour.js')
-    @endif
 
     <script>
         //script
