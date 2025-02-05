@@ -9,7 +9,7 @@
 <div class="gray pt-2">
 <div class="container">
 <form class="row container justify-content-center align-items-center" action="">
-	    <div class="form-group col-lg-4">
+	    <!-- <div class="form-group col-lg-4">
 			<label>RCC</label>
 			@include('partials.regions.dropdown',['class'=>'select2','allfield'=>'ALL','selected'=>@$_GET['rcc']])
 		</div>
@@ -20,7 +20,7 @@
 		<input type="hidden" name="slug" value="<?php echo (isset($_GET['slug']))?$_GET['slug']:''; ?>" />
 		<div class="form-group col-lg-4">
 			<button type="submit" class="btn btn btn-md btn-sm btn-success mt-4">Apply Filter</button>
-		</div>
+		</div> -->
 </form>
 	<!-- Item Wrap Start -->
 	<div class="col-lg-12 col-md-12 col-sm-12 ">
