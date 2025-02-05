@@ -68,40 +68,7 @@
                 <ul class="nav-menu">
 
                     <li><a href="{{ url('/') }}">Home</a></li>
-                    <li class="categories "><a href="javascript:void(0);">Categories<span
-                                class="submenu-indicator"></span></a>
-                        <ul class="nav-dropdown nav-submenu" style="right: auto; display: none;">
-
-                            @foreach ($data_categories as $category)
-                                @if ($category->is_special)
-                                    @auth
-                                        <li>
-                                            <a
-                                                href="{{ url($category->url_path) }}?slug={{ $category->slug }}">{{ $category->category_name }}</a>
-                                        </li>
-                                    @endauth
-                                @else
-                                    @if (strlen($category->required_permission) > 0)
-                                        @auth
-                                            @can($category->required_permission)
-                                                <li>
-                                                    <a
-                                                        href="{{ url('/records') }}?category={{ $category->id }}">{{ $category->category_name }}</a>
-                                                </li>
-                                            @endcan
-                                        @endauth
-                                    @else
-                                        <li>
-                                            <a
-                                                href="{{ url('/records') }}?category={{ $category->id }}">{{ $category->category_name }}</a>
-                                        </li>
-                                    @endif
-                                @endif
-                            @endforeach
-
-
-                        </ul>
-                    </li>
+          
                     @if (states_enabled())
                     @endif
 
@@ -109,15 +76,15 @@
                     @if (states_enabled())
                         <li><a href="{{ url('countries') }}">Member States</a></li>
                     @else
-                        <li><a href="{{ url('adminunits') }}">Administrative Units</a></li>
+                        <li><a href="{{ url('adminunits') }}">Divisions</a></li>
                     @endif
                     <li><a href="{{ url('faqs') }}">FAQs</a></li>
                     <li><a href="{{ url('tools') }}">Tools</a></li>
                     @include('partials.account.authlinks', ['class' => 'mobileonly'])
 
-                    <li><a href="{{ url('courses') }}">Courses</a></li>
+                    <li><a href="{{ url('courses') }}">Learning Center</a></li>
                     <li><a href="{{ url('communities') }}">Communities</a></li>
-                    <li><a href="{{ url('publications/request-content') }}">Content Request</a></li>
+                   
 
                 </ul>
 
