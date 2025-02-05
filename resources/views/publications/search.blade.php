@@ -13,7 +13,7 @@
                         <h4 class="ml-3">Search Results</h4>
                     </div>
 
-                    @include('partials.quiz.quiz')
+                    {{-- @include('partials.quiz.quiz') --}}
 
                     <div class="row text-success ml-2 mb-2">
                         {{ isset($_GET['tag']) ? ' Tag: ' . $_GET['tag'] : '' }}
