@@ -72,7 +72,7 @@
                     @if (states_enabled())
                     @endif
 
-                    <li><a href="{{ url('forums') }}">Forums</a></li>
+                    <!-- <li><a href="{{ url('forums') }}">Forums</a></li> -->
                     @if (states_enabled())
                         <li><a href="{{ url('countries') }}">Member States</a></li>
                     @else
