@@ -102,7 +102,7 @@
                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                    <div class="position-relative text-center">
                        <a id="explore" href="{{ url('records') }}"
-                           class="btn btn-md theme-bg rounded text-light hover-theme">Explore More Resources<i
+                           class="btn btn-md theme-bg rounded text-light hover-theme">More<i
                                class="lni lni-arrow-right-circle ml-2"></i></a>
                    </div>
                </div>
