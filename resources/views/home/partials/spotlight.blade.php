@@ -26,7 +26,7 @@
 <div  class="row spot-row col-sm-12 d-flex align-items-center">
      
     <div class="col-lg-4 col-md-12 col-sm-12 px-3">
-        @include('home.partials.quotes')
+       {{-- @include('home.partials.quotes')--}}
        {{-- @include('home.partials.tags') --}}
     </div>
 
