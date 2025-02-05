@@ -41,6 +41,7 @@
     @endif
 
     <script>
+        //script
         var showing = false;
 
         function showComments(elem) {

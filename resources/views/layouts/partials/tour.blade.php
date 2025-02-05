@@ -1,6 +1,6 @@
 
 @if(!get_cookie('CDC_Tour_Finished') || !env('SITE_LIVE')):
-
+<!-- 
 <script src="{{ asset('assets/plugins/tour/tour.js')}}"></script>
 
 <script>
@@ -78,6 +78,6 @@ let tourOptions = {
 ProductTourJS.init(tourOptions); 
 ProductTourJS.start();
 
-</script>
+</script> -->
 
 @endif
