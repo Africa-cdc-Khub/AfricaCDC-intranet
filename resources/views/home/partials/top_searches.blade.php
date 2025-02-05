@@ -5,7 +5,7 @@
            <div class="row justify-content-center" data-aos="fade-in">
                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                    <div class="sec_title position-relative text-center mb-5">
-                       <h2 class="ft-bold">Top Searches</span></h2>
+                       <h2 class="ft-bold">Africa CDC Systems</span></h2>
                    </div>
                </div>
            </div>
