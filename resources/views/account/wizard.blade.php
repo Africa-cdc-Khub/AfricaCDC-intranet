@@ -259,7 +259,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="communities">Target Audience/Communities of Practice</label>
+                        <label class="form-label" for="communities">Target Audience/Communities of Practice(Leave Blank for open access)</label>
                         <!-- <a href="#" class="btn btn-sm btn-dark btn-outline mb-2"><i class="fa fa-plus"></i> Add Community Of Practice</a> -->
                         @include('partials.publications.publication_communities_dropdown', [
                             'field' => 'communities[]',
